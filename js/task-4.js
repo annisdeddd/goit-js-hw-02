@@ -1,4 +1,4 @@
-// Задача 4. Доставка товару
+// Task 4. Shipping
 
 function getShippingCost(country) {
     let price;
@@ -16,7 +16,7 @@ function getShippingCost(country) {
             price = 120;
             break;
         default:
-            console.log("Sorry, there is no delivery to your country")
+            return "Sorry, there is no delivery to your country";
     }   
     return `Shipping to ${country} will cost ${price} credits`
     

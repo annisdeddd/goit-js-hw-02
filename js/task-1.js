@@ -1,11 +1,11 @@
-// Задача 1. Замовлення дроїдів
+// Task 1. Order droids
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
     const totalPrice = quantity * pricePerDroid;
     if (customerCredits >= totalPrice) {
         console.log(`You ordered ${quantity} droids worth ${totalPrice} credits!`);
     } else {
-        console.log("Insufficient funds!");
+        return "Insufficient funds!"
     }
 }
 

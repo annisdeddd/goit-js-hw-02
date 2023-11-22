@@ -1,14 +1,8 @@
-// Задача 3. Перевірка спаму
+// Task 3. Spam checking
 
 function checkForSpam(message) {
     const lowerCaseInput = message.toLowerCase();
-    const hasSpam = lowerCaseInput.includes("spam") || lowerCaseInput.includes("sale");
-   
-    if (hasSpam) {
-        return true
-    } else {
-        return false
-    }
+    return lowerCaseInput.includes("spam") || lowerCaseInput.includes("sale");
 }
 
 console.log(checkForSpam("Latest technology news")); // false

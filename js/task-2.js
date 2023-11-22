@@ -1,10 +1,10 @@
-// Задача 2. Форматування повідомлення
+// Task 2. Messages formatting
 
 function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
-        console.log(message);
-    } else if (message.length >= maxLength) {
-        console.log(`${message.slice(0, maxLength)}...`)
+        return message;
+    } else {
+        return message.slice(0, maxLength) + "...";
     }
 }
 
